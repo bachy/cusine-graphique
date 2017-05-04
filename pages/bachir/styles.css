@@ -28,10 +28,10 @@ DejaVuSerif-condensed
 
 
 h1{
-  font-size:42pt;
+  font-size:84pt;
   font-weight: lighter;
 }
 
 .gauche img{
-  width:140mm;
+  /*width:140mm;*/
 }
