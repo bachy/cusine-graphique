@@ -1,0 +1,759 @@
+@charset "UTF-8";
+/**
+ * This file is part of HTML2print.
+ *
+ * HTML2print is free software: you can redistribute it and/or modify it under the
+ * terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * HTML2print is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with HTML2print.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/**
+ * The less CSS is splitted accross different files for a better organisation.
+ *
+ * This is the main less css file that defines custom values and requires all
+ * the the neccessary dependencies.
+ */
+/**
+ * THE CODE BELOW IS REQUIRED TO MAKE HTML2PRINT WORK.
+ */
+/**
+ * Defines and loads the rules that set the geometry of the page and its
+ * representation on screen. This is the core of html2print.
+ *
+ * Customize the variables to your needs.
+ */
+/* the geometry of the page */
+/* the size of the crop marks based on scribus defaults */
+/* the size of bleed */
+/* loads the core file */
+/**
+ * THE CODE BELOW IS NOT REQUIRED TO MAKE HTML2PRINT WORK, ALTHOUGH IT PROVES
+ * USEFUL IN MANY SITUATIONS.
+ *
+ * YOU ARE ENCOURAGED TO CUSTOMIZE IT TO YOU NEEDS.
+ */
+/**
+ * Defines and generate helper css rules to absolutly position elements on a
+ * grid.
+ *
+ * Customize the variables to your needs.
+ */
+/* Loads the rules for using grids */
+/**
+ * Loads the rules to outline the main blocs
+ */
+/**
+ * Loads a few less helpers
+ */
+/**
+ * Defines and loads the rules that set the base layout of the document
+ * (header, body, footer)
+ *
+ * Customize the variables to your needs.
+ */
+/**
+ * Loads your own styles.
+ *
+ * Customize the file/path to you needs.
+ */
+/*@import '/vendors/reset-css/reset.css';*/
+/*@import "../vendors/normalize.css/normalize.css";*/
+/*@import "../vendors/normalize-opentype.css/normalize-opentype.css";*/
+/**
+ * This file is part of HTML2print.
+ *
+ * HTML2print is free software: you can redistribute it and/or modify it under the
+ * terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * HTML2print is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with HTML2print.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/**
+ * Computation
+ */
+/* computes the edge size of the paper, which is the sum of the bleed and the
+ * crop sizes */
+/* Computes the size of the paper sheet */
+/**
+ * DEFINITION OF THE PAPER SHEET
+ */
+/**
+ * The $page CSS at-rule is used to define some properties of printed
+ * documents. We make it the size of the elements with the .paper class and
+ * remove any margins so they don't add up with margins specifed in elements
+ * with the .page class (or it's children, like .header, .body and .footer)
+ *
+ * We add 2pt to circumvent a rounding number bug in some browsers that make
+ * them include extra pages or shifts.
+ */
+@page {
+  size: 640.6196pt 889.2298pt;
+  margin: 0; }
+
+/**
+ * CANVAS
+ */
+@media all {
+  body {
+    margin: 0;
+    /* Activate opentype features and kernings */
+    -webkit-font-feature-settings: "liga", "dlig", "clig", "kern";
+    text-rendering: optimizeLegibility; }
+  .paper {
+    width: 640.6196pt;
+    height: 887.2298pt;
+    box-sizing: border-box;
+    /* defines a named counter and increments it every page, so we can use
+         * it to compute the page number */
+    counter-increment: folio;
+    /* makes sure that pages aren't cut because of pootential unprecise unit
+         * conversion at printing time */
+    page-break-inside: avoid;
+    page-break-after: always;
+    /* clips the content if it goes out of the page, so it doesn't increase
+         * the format */
+    overflow: hidden;
+    /* Crop marks */
+    padding: 22.6768pt;
+    position: relative;
+    /* Crop marks */
+    background-image: -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%), -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%), -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%), -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%);
+    background-size: 14.173pt 1px, 1px 14.173pt, 14.173pt 1px, 1px 14.173pt, 14.173pt 1px, 1px 14.173pt, 14.173pt 1px, 1px 14.173pt;
+    background-position: left 22.6768pt, 22.6768pt top, right 22.6768pt, 617.9428pt top, right 864.553pt, 617.9428pt bottom, left 864.553pt, 22.6768pt bottom;
+    background-repeat: no-repeat; }
+  .page {
+    /* defines the page size */
+    width: 595.266pt;
+    height: 841.8762pt;
+    /* allows for absolutely positioned elements as settings the position
+         * property to relative as the side effect of making this elements
+         * top-left corner the reference point */
+    /*position: relative;*/
+    position: absolute; }
+  .spread .paper {
+    float: left; }
+  .spread:not(.facing) .paper:nth-child(odd) {
+    margin-left: -22.6768pt; }
+  .spread:not(.facing) .paper:nth-child(even) {
+    margin-right: -22.6768pt; }
+  .spread:not(.facing) .paper:first-child {
+    margin-left: 595.266pt; }
+  .spread.facing .paper:nth-child(even) {
+    margin-right: initial;
+    margin-left: -22.6768pt; }
+  .spread.facing .paper:nth-child(odd) {
+    margin-left: initial;
+    margin-right: -22.6768pt; }
+  .spread.facing .paper:first-child {
+    margin-left: 0; } }
+
+@media screen {
+  /* defines the background color of the workspace */
+  /* UI */
+  body {
+    background-color: #F0F0F0; }
+  #pages {
+    width: 640.6196pt;
+    height: 887.2298pt;
+    margin-left: auto;
+    margin-right: auto; }
+  /* FIXME: allows for printing spreads as well */
+  .spread #pages {
+    width: 1281.2392pt;
+    height: 1774.4596pt; }
+  .paper {
+    /* centrer la page à l'écran */
+    /* UI */
+    background-color: white;
+    /* UI */
+    margin-top: 1em;
+    /* UI */
+    margin-bottom: 1em; }
+  /* UI */
+  .normal .page {
+    outline: 1px dotted lightsalmon; }
+  /* UI */
+  .preview .paper {
+    background: transparent; }
+  /* UI */
+  .preview .page {
+    outline: 1px solid lightgray;
+    background-color: white;
+    overflow: hidden; } }
+
+@media print {
+  html {
+    width: 640.6196pt; }
+  body {
+    /* Allows for background colors printing */
+    background-color: transparent;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact; } }
+
+/**
+ * Helpers
+ */
+.region-break {
+  /* Apply this class to an element to put it on a new region.
+     * Hint:
+     * You can also use an empty <div class="page-break"></div>
+     * if you want to put manual page breaks without attaching it to an HTML element
+     */
+  -webkit-region-break-before: always; }
+
+/* x classes */
+.x0 {
+  left: 0pt; }
+
+.x1, html:not(.facing) .paper:nth-child(odd) .body:before,
+html.facing .paper:nth-child(even) .body:before, html:not(.facing) .paper:nth-child(even) .body:after,
+html.facing .paper:nth-child(odd) .body:after {
+  left: 60.25178pt; }
+
+.x2 {
+  left: 120.50356pt; }
+
+.x3 {
+  left: 180.75533pt; }
+
+.x4 {
+  left: 241.00711pt; }
+
+.x5, html:not(.facing) .paper:nth-child(even) .body:before,
+html.facing .paper:nth-child(odd) .body:before, html:not(.facing) .paper:nth-child(odd) .body:after,
+html.facing .paper:nth-child(even) .body:after {
+  left: 301.25889pt; }
+
+.x6 {
+  left: 361.51067pt; }
+
+.x7 {
+  left: 421.76244pt; }
+
+.x8 {
+  left: 482.01422pt; }
+
+/* y classes */
+.y0 {
+  top: 0pt; }
+
+.y1 {
+  top: 63.82302pt; }
+
+.y2 {
+  top: 127.64603pt; }
+
+.y3 {
+  top: 191.46905pt; }
+
+.y4 {
+  top: 255.29207pt; }
+
+.y5 {
+  top: 319.11508pt; }
+
+.y6 {
+  top: 382.9381pt; }
+
+.y7 {
+  top: 446.76112pt; }
+
+.y8 {
+  top: 510.58413pt; }
+
+.y9 {
+  top: 574.40715pt; }
+
+.y10 {
+  top: 638.23017pt; }
+
+.y11 {
+  top: 702.05318pt; }
+
+/* width classes */
+.w1, html:not(.facing) .paper:nth-child(odd) .body:after,
+html.facing .paper:nth-child(even) .body:after, html:not(.facing) .paper:nth-child(even) .body:after,
+html.facing .paper:nth-child(odd) .body:after {
+  width: 51.25178pt; }
+
+.w2 {
+  width: 111.50356pt; }
+
+.w3 {
+  width: 171.75533pt; }
+
+.w4, html:not(.facing) .paper:nth-child(odd) .body:before,
+html.facing .paper:nth-child(even) .body:before, html:not(.facing) .paper:nth-child(even) .body:before,
+html.facing .paper:nth-child(odd) .body:before {
+  width: 232.00711pt; }
+
+.w5 {
+  width: 292.25889pt; }
+
+.w6 {
+  width: 352.51067pt; }
+
+.w7 {
+  width: 412.76244pt; }
+
+.w8 {
+  width: 473.01422pt; }
+
+.w9 {
+  width: 533.266pt; }
+
+/* height classes */
+.h1 {
+  height: 51.82302pt; }
+
+.h2 {
+  height: 115.64603pt; }
+
+.h3 {
+  height: 179.46905pt; }
+
+.h4 {
+  height: 243.29207pt; }
+
+.h5 {
+  height: 307.11508pt; }
+
+.h6 {
+  height: 370.9381pt; }
+
+.h7 {
+  height: 434.76112pt; }
+
+.h8 {
+  height: 498.58413pt; }
+
+.h9 {
+  height: 562.40715pt; }
+
+.h10 {
+  height: 626.23017pt; }
+
+.h11 {
+  height: 690.05318pt; }
+
+.h12 {
+  height: 753.8762pt; }
+
+html:not(.facing) .paper:nth-child(odd) .l-1,
+html.facing .paper:nth-child(even) .l-1 {
+  left: -52pt; }
+
+html:not(.facing) .paper:nth-child(even) .l-1,
+html.facing .paper:nth-child(odd) .l-1 {
+  left: -38pt; }
+
+.l0 {
+  left: 0; }
+
+.l1 {
+  left: 51.25178pt; }
+
+.l2 {
+  left: 60.25178pt; }
+
+.l3 {
+  left: 111.50356pt; }
+
+.l4 {
+  left: 120.50356pt; }
+
+.l5 {
+  left: 171.75533pt; }
+
+.l6 {
+  left: 180.75533pt; }
+
+.l7 {
+  left: 232.00711pt; }
+
+.l8 {
+  left: 241.00711pt; }
+
+.l9 {
+  left: 292.25889pt; }
+
+.l10 {
+  left: 301.25889pt; }
+
+.l11 {
+  left: 352.51067pt; }
+
+.l12 {
+  left: 361.51067pt; }
+
+.l13 {
+  left: 412.76244pt; }
+
+.l14 {
+  left: 421.76244pt; }
+
+.l15 {
+  left: 473.01422pt; }
+
+.l16 {
+  left: 482.01422pt; }
+
+.l17 {
+  left: 533.266pt; }
+
+html:not(.facing) .paper:nth-child(odd) .r-1,
+html.facing .paper:nth-child(even) .r-1 {
+  right: -38pt; }
+
+html:not(.facing) .paper:nth-child(even) .r-1,
+html.facing .paper:nth-child(odd) .r-1 {
+  right: -52pt; }
+
+.r0 {
+  right: 0; }
+
+.r1 {
+  right: 51.25178pt; }
+
+.r2 {
+  right: 60.25178pt; }
+
+.r3 {
+  right: 111.50356pt; }
+
+.r4 {
+  right: 120.50356pt; }
+
+.r5 {
+  right: 171.75533pt; }
+
+.r6 {
+  right: 180.75533pt; }
+
+.r7 {
+  right: 232.00711pt; }
+
+.r8 {
+  right: 241.00711pt; }
+
+.r9 {
+  right: 292.25889pt; }
+
+.r10 {
+  right: 301.25889pt; }
+
+.r11 {
+  right: 352.51067pt; }
+
+.r12 {
+  right: 361.51067pt; }
+
+.r13 {
+  right: 412.76244pt; }
+
+.r14 {
+  right: 421.76244pt; }
+
+.r15 {
+  right: 473.01422pt; }
+
+.r16 {
+  right: 482.01422pt; }
+
+.r17 {
+  right: 533.266pt; }
+
+.t-1 {
+  top: -38pt; }
+
+.t0 {
+  top: 0; }
+
+.t1 {
+  top: 51.25178pt; }
+
+.t2 {
+  top: 60.25178pt; }
+
+.t3 {
+  top: 111.50356pt; }
+
+.t4 {
+  top: 120.50356pt; }
+
+.t5 {
+  top: 171.75533pt; }
+
+.t6 {
+  top: 180.75533pt; }
+
+.t7 {
+  top: 232.00711pt; }
+
+.t8 {
+  top: 241.00711pt; }
+
+.t9 {
+  top: 292.25889pt; }
+
+.t10 {
+  top: 301.25889pt; }
+
+.t11 {
+  top: 352.51067pt; }
+
+.t12 {
+  top: 361.51067pt; }
+
+.t13 {
+  top: 412.76244pt; }
+
+.t14 {
+  top: 421.76244pt; }
+
+.t15 {
+  top: 473.01422pt; }
+
+.t16 {
+  top: 482.01422pt; }
+
+.t17 {
+  top: 533.266pt; }
+
+.t18 {
+  top: 542.266pt; }
+
+.t19 {
+  top: 593.51778pt; }
+
+.t20 {
+  top: 602.51778pt; }
+
+.t21 {
+  top: 653.76956pt; }
+
+.t22 {
+  top: 662.76956pt; }
+
+.t23 {
+  top: 714.02133pt; }
+
+.t24 {
+  top: 723.02133pt; }
+
+.b-1 {
+  bottom: -78pt; }
+
+.b0 {
+  bottom: 0; }
+
+.b1 {
+  bottom: 51.25178pt; }
+
+.b2 {
+  bottom: 60.25178pt; }
+
+.b3 {
+  bottom: 111.50356pt; }
+
+.b4 {
+  bottom: 120.50356pt; }
+
+.b5 {
+  bottom: 171.75533pt; }
+
+.b6 {
+  bottom: 180.75533pt; }
+
+.b7 {
+  bottom: 232.00711pt; }
+
+.b8 {
+  bottom: 241.00711pt; }
+
+.b9 {
+  bottom: 292.25889pt; }
+
+.b10 {
+  bottom: 301.25889pt; }
+
+.b11 {
+  bottom: 352.51067pt; }
+
+.b12 {
+  bottom: 361.51067pt; }
+
+.b13 {
+  bottom: 412.76244pt; }
+
+.b14 {
+  bottom: 421.76244pt; }
+
+.b15 {
+  bottom: 473.01422pt; }
+
+.b16 {
+  bottom: 482.01422pt; }
+
+.b17 {
+  bottom: 533.266pt; }
+
+.b18 {
+  bottom: 542.266pt; }
+
+.b19 {
+  bottom: 593.51778pt; }
+
+.b20 {
+  bottom: 602.51778pt; }
+
+.b21 {
+  bottom: 653.76956pt; }
+
+.b22 {
+  bottom: 662.76956pt; }
+
+.b23 {
+  bottom: 714.02133pt; }
+
+.b24 {
+  bottom: 723.02133pt; }
+
+.grid .body {
+  outline: 1px solid rgba(255, 0, 0, 0.25);
+  background-attachment: local;
+  background-size: 100% 63.82302pt, 60.25178pt 100%, 100% 63.82302pt, 60.25178pt 100%, 100% 12pt;
+  background-position: -1px -1px, -1px -1px, -21pt, -21pt, 0 -1px;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(to right, rgba(255, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(to right, rgba(255, 0, 0, 0.25) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 255, 255, 0.15) 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -webkit-linear-gradient(top, rgba(0, 255, 255, 0.15) 1px, transparent 1px);
+  background-image: -moz-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -moz-linear-gradient(top, rgba(0, 255, 255, 0.15) 1px, transparent 1px);
+  background-image: -ms-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -ms-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -ms-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -ms-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -ms-linear-gradient(top, rgba(0, 255, 255, 0.15) 1px, transparent 1px);
+  background-image: -o-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(top, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(left, rgba(255, 0, 0, 0.25) 1px, transparent 1px), -o-linear-gradient(top, rgba(0, 255, 255, 0.15) 1px, transparent 1px); }
+
+/**
+ * DEBUG STYLES
+ */
+.debug .header {
+  outline: 1px solid pink; }
+
+.debug .body {
+  outline: 1px solid purple; }
+
+.debug .footer {
+  outline: 1px solid pink; }
+
+.debug .region-break {
+  border-top: 1px dashed blue;
+  box-sizing: border-box; }
+
+.debug img {
+  outline: 1px solid blue; }
+
+/**
+ * Mixins
+ * ======
+ */
+/**
+ * Macro-structure
+ * ===============
+ */
+.body,
+.body:before,
+.body:after {
+  position: absolute; }
+
+.body:before,
+.body:after {
+  z-index: 500; }
+
+/**
+ * Zone de composition principale
+ * ------------------------------
+ */
+.body {
+  top: 24pt;
+  width: 533.266pt;
+  height: 753.8762pt;
+  z-index: 498;
+  overflow: hidden; }
+
+/* TODO: move into grid.less? */
+/**
+ * Pieds de page
+ * -------------
+ */
+.body:before,
+.body:after {
+  display: block;
+  font-family: sans-serif;
+  font-size: 6pt;
+  line-height: 12pt;
+  letter-spacing: 0.25pt;
+  z-index: 500; }
+
+.body:before,
+.body:after {
+  bottom: -36pt; }
+
+/*gauche*/
+.paper:nth-child(odd) .body:before {
+  content: "Cuisine graphique"; }
+
+/*droite*/
+.paper:nth-child(even) .body:before {
+  content: "Cuisine graphique"; }
+
+.body:after {
+  content: counter(folio);
+  z-index: 499; }
+
+/**
+ * Miroir
+ * -------
+ */
+/**
+ * Placement en miroir des éléments en fonction de si ils se trouvent sur une
+ * page paire ou une page impaire, en utilisant le pseudo-sélecteur `nth-child`
+ */
+html:not(.facing) .paper:nth-child(odd) .body,
+html.facing .paper:nth-child(even) .body {
+  right: 24pt;
+  left: 38pt; }
+
+html:not(.facing) .paper:nth-child(even) .body,
+html.facing .paper:nth-child(odd) .body {
+  left: 24pt;
+  right: 38pt; }
+
+html:not(.facing) .paper:nth-child(odd) .body:after,
+html.facing .paper:nth-child(even) .body:after {
+  text-align: left; }
+
+html:not(.facing) .paper:nth-child(even) .body:after,
+html.facing .paper:nth-child(odd) .body:after {
+  text-align: left; }
+
+#flow-main {
+  -webkit-flow-into: flow-main;
+  flow-into: flow-main; }
+
+.flow-main {
+  -webkit-flow-from: flow-main;
+  flow-from: flow-main; }
+
+/*@import "export.scss";*/
