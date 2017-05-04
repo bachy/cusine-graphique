@@ -1,0 +1,22 @@
+{
+  "name": "TDSM",
+  "version": "1.0.0",
+  "description": "html2print TDSM",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Bachir Soussi Chiadmi",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "^4.2.4",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {}
+}
