@@ -19,12 +19,14 @@
 
 .body {
     top: $page-margin-top;
-    bottom: $page-margin-bottom;
+    // bottom: $page-margin-bottom;
+    width: $body-width;
+    height:$body-height;
     z-index: 498;
-    // overflow :visible;
+    overflow :hidden;
 }
 
-img{max-width:100%;}
+// img{max-width:100%;}
 
 /* TODO: move into grid.less? */
 // .bloc { position: absolute; z-index: 500; }

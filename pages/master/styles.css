@@ -1,8 +1,21 @@
 /* Styles css ( mise en forme ) de ma double page */
 
-.page{
-  font-family: sans-serif;
+/*
+Fonts dispo :
 
+OpenSans
+
+DejaVuSansMono
+DejaVuSans
+DejaVuSerif
+DejaVuSerif-condensed
+
+*/
+
+.page{
+  font-family: "DejaVuSans";
+  font-weight:normal;
+  font-size: 14pt;
 }
 
 .droite{
@@ -11,4 +24,14 @@
 
 .gauche{
 
+}
+
+
+h1{
+  font-size:42pt;
+  font-weight: lighter;
+}
+
+.gauche img{
+  width:140mm;
 }

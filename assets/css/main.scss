@@ -71,11 +71,11 @@ $bleed: mm2pt(3);
  */
 
 $col-number: 9;
-$col-gutter: mm2pt(3);
+$col-gutter: 9pt;//mm2pt(9);
 
 //$row-number: 13;
 $row-number: 12;
-$row-gutter: mm2pt(4);
+$row-gutter: 12pt;//mm2pt(12);
 
 $grid-color: rgba(255, 0, 0, 0.25);
 $baseline-grid-color: rgba(0, 255, 255, 0.15);
@@ -109,10 +109,10 @@ $baseline-grid-color: rgba(0, 255, 255, 0.15);
  */
 
 // FIXME: make a case for single page layouts
-$page-margin-inside: mm2pt(10);
-$page-margin-outside: mm2pt(5);
-$page-margin-top: mm2pt(5);
-$page-margin-bottom: mm2pt(5);
+$page-margin-inside: 38pt;//mm2pt(10);
+$page-margin-outside: 24pt;//mm2pt(5);
+$page-margin-top: 24pt;//mm2pt(5);
+$page-margin-bottom: 64pt;//mm2pt(5);
 
 // @import "layout.scss";
 
@@ -129,7 +129,7 @@ $page-margin-bottom: mm2pt(5);
 // @import "fonts.scss";
 // @import "colors.scss";
 
-$line-height: mm2pt(4);
+$line-height: 12pt;//mm2pt(12);
 // @import "styles.scss";
 
 @import "html2print.scss";
