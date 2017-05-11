@@ -1,0 +1,23 @@
+.page{
+  font-family: "DejaVuSans";
+  font-weight:normal;
+  font-size: 14pt;
+}
+
+.droite{
+}
+
+
+.gauche{
+
+}
+
+
+h1{
+  font-size:42pt;
+  font-weight: lighter;
+}
+
+.gauche img{
+  width:140mm;
+}
