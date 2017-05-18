@@ -19,6 +19,7 @@ import re
 
 _SRC_d = 'pages'
 _BUILD_d = "build"
+_IMG_path = os.path.join(_BUILD_d, 'images')
 # CUR_PATH = os.path.dirname(os.path.abspath(__file__))
 
 print("Building book")
@@ -28,6 +29,7 @@ def main():
    if os.path.isdir(_BUILD_d):
       shutil.rmtree(_BUILD_d, ignore_errors=True)
    os.mkdir(_BUILD_d)
+   os.mkdir(_IMG_path)
 
    parse_pages()
 
@@ -74,13 +76,16 @@ def parse_pages():
       scss += "\t"+styles
       scss += "}\n\n"
 
-      for div in page_dom.find_all('div', {"class":"paper"}):
-         print(div['class'])
-         div['class'].append(page_id)
+      images_d_path = os.path.join(page_d_path, 'images')
+      if os.path.isdir(images_d_path):
+         for img in os.listdir(images_d_path):
+            shutil.copyfile(os.path.join(images_d_path,img), os.path.join(_IMG_path,img))
 
+      for div in page_dom.find_all('div', {"class":"paper"}):
+         div['class'].append(page_id)
          for img in div.find_all('img'):
             # print(img['src'])
-            src = '../pages/'+page_d+'/'+img['src']
+            src = '../build/'+img['src']
             img['src'] = src
             
          template_dom.find('div', {"id":"couve3"}).insert_before(div)
