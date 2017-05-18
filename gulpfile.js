@@ -32,13 +32,19 @@ gulp.task('scss', function () {
     .pipe(gulp.dest('./assets/css/dist'));
 });
 
-gulp.task('build', shell.task([
-  './bin/build.py'
-]));
+gulp.task('build-css', ['build'], function(){
+    gulp.src('./build/styles.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('./build/'));
+  }
+);
+
+gulp.task('build',shell.task(
+  ['./bin/build.py']
+));
 
 // default gulp task
-gulp.task('default', ['webserver', 'scss'], function() {
+gulp.task('default', ['webserver', 'scss', 'build-css'], function() {
   gulp.watch('./assets/css/**/*.scss', ['scss']);
-  gulp.watch(['bin/build.py', './pages/*', './templates/*.tpl.html'], ['build']);
-
+  gulp.watch(['bin/build.py', './pages/*', './templates/*.tpl.html'], ['build-css']);
 });

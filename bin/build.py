@@ -39,6 +39,7 @@ def parse_pages():
    template_html = template_f.read()
    template_dom = BeautifulSoup(template_html, 'html.parser')
 
+   scss = "// compiled css\n\n"
 
    # loop through pages folders
    for page_d in os.listdir(_SRC_d):
@@ -48,18 +49,33 @@ def parse_pages():
 
       print('page : '+page_d)
 
+      page_id = page_d.replace(' ', '-')
+
       page_d_path = os.path.join(_SRC_d,page_d)
       index_f_path = os.path.join(page_d_path, 'index.html')
-
       if not os.path.isfile(index_f_path):
          print("Index path is not a file, can't generate html : "+index_f_path)
          continue
+
+      styles_f_path = os.path.join(page_d_path, 'styles.css')
+      if not os.path.isfile(styles_f_path):
+         print("Styles path is not a file, can't generate css : "+styles_f_path)
+         continue
+
 
       page_f = open(index_f_path, "r")
       page_html = page_f.read()
       page_dom = BeautifulSoup(page_html, 'html.parser')
 
+      styles_f = open(styles_f_path, "r")
+      styles = styles_f.read()
+
+      scss += "."+page_id+"{\n"
+      scss += "\t"+styles
+      scss += "}\n\n"
+
       content = page_dom.find('div', {"class":"paper"})
+      # TODO: content.find('div', {"class":"paper"}).add_class(page_id)
       template_dom.find('div', {"id":"couve3"}).insert_before(content)
 
 
@@ -67,6 +83,10 @@ def parse_pages():
    build_html_f = os.path.join(_BUILD_d,'index.html')
    with open(build_html_f, 'w') as fp:
       fp.write(template_dom.prettify())
+
+   build_scss_f = os.path.join(_BUILD_d,'styles.scss')
+   with open(build_scss_f, 'w') as fp:
+      fp.write(scss)
 
 
 if __name__ == "__main__":
