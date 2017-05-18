@@ -35,7 +35,7 @@ def parse_pages():
    print("Parse book")
 
    # get template html
-   template_f = open("templates/index.html", "r")
+   template_f = open("templates/index.tpl.html", "r")
    template_html = template_f.read()
    template_dom = BeautifulSoup(template_html, 'html.parser')
 
