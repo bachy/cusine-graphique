@@ -77,6 +77,12 @@ def parse_pages():
       for div in page_dom.find_all('div', {"class":"paper"}):
          print(div['class'])
          div['class'].append(page_id)
+
+         for img in div.find_all('img'):
+            # print(img['src'])
+            src = '../pages/'+page_d+'/'+img['src']
+            img['src'] = src
+            
          template_dom.find('div', {"id":"couve3"}).insert_before(div)
 
 
