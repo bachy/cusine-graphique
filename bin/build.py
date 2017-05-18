@@ -74,9 +74,10 @@ def parse_pages():
       scss += "\t"+styles
       scss += "}\n\n"
 
-      content = page_dom.find('div', {"class":"paper"})
-      # TODO: content.find('div', {"class":"paper"}).add_class(page_id)
-      template_dom.find('div', {"id":"couve3"}).insert_before(content)
+      for div in page_dom.find_all('div', {"class":"paper"}):
+         print(div['class'])
+         div['class'].append(page_id)
+         template_dom.find('div', {"id":"couve3"}).insert_before(div)
 
 
    # create main html file from filled template html dom
