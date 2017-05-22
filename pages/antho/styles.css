@@ -13,12 +13,15 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSans";
-  font-weight:normal;
+  /*font-family: 'Fredoka One', cursive;*/
+  font-family: 'Quicksand', sans-serif;
+  font-weight:medium;
   font-size: 14pt;
+  background-color: #FFF;
 }
 
 .droite{
+  
 }
 
 
@@ -28,10 +31,36 @@ DejaVuSerif-condensed
 
 
 h1{
-  font-size:42pt;
-  font-weight: lighter;
+  font-size:16pt;
+  font-weight: medium;
+  text-align: left;
+  color:#212121;
+}
+
+p{
+font-size:12pt;
+  font-weight: medium;
+  text-align: left;
+}
+
+.flotte{
+  float:right;
 }
 
 .gauche img{
-  width:140mm;
+  width:80mm;
+  height: auto;
+  margin-left:40px;
+  float: right;
+  border-radius: 40px;
+
+}
+
+.droite img{
+  width:50mm;
+  height: auto;
+  margin-left:40px;
+  float: right;
+  border-radius: 40px;
+
 }
