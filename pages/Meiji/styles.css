@@ -1,0 +1,66 @@
+/* Styles css ( mise en forme ) de ma double page */
+
+/*
+Fonts dispo :
+
+OpenSans
+
+DejaVuSansMono
+DejaVuSans
+DejaVuSerif
+DejaVuSerif-condensed
+
+*/
+
+.page{
+  font-family: "DejaVuSans";
+  font-weight:normal;
+  font-size: 14pt;
+}
+
+.droite{font-family: "DejaVuSans";
+font-weight:normal;
+font-size: 14pt;
+}
+
+.ingredients{
+              border-width: thin;
+              position: absolute;
+              margin-left: 400px;
+              margin-top: 0px;
+            border-left-style: solid;}
+.imageGauche{
+  margin-left: auto;
+  margin-right: auto;
+  Background-position : center center; }
+.footer{
+    border-top-style :dashed;
+    margin-left: 50px;
+    margin-top: 910px;
+    margin-right: 110px;
+    position: absolute;
+    font-weight: lighter;
+    color : #1D61A0;
+    text-align: left;
+    border-width: thin;
+}
+.gauche{
+
+}
+
+#image {
+  image-orientation:90deg;
+}
+li {color: #1D61A0;
+    font-weight: lighter;}
+
+h1{margin-top:  auto;
+  font-size:42pt;
+  font-weight:300;
+}
+h2 {fontsize:22pt;
+    font-weight: lighter;
+    color : #1D61A0; }
+.gauche img{
+  width:140mm;
+}
