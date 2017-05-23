@@ -13,25 +13,104 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSans";
+  font-family: "Arial";
   font-weight:normal;
   font-size: 14pt;
 }
 
 .droite{
-}
 
+}
 
 .gauche{
-
+text-align: center;
 }
 
 
+.flotte {
+  position: absolute;
+  top: 282px;
+  left: 305px;
+
+}
+
+p{
+
+
+}
+
 h1{
-  font-size:42pt;
-  font-weight: lighter;
+  font-size:25pt;
+text-align: center;
+}
+
+h2{
+  font-size:15pt;
+font-weight: lighter;
+}
+
+h3{
+border-top: 1px solid #000;
+width : 100px;
+position: absolute;
+top: 125px;
+left: 310px;
+}
+
+h4 {
+font-size: 15pt;
+position: absolute;
+left: 65px;
+top: 220px;
+text-decoration: underline;
+}
+
+h5 {
+font-size: 15pt;
+position: absolute;
+left: 175px;
+top: 213px;
+
+}
+
+ul {
+  font-size:12pt;
+  position:absolute;
+  left: 40px;
+  top: 278px;
+  text-align: left;
+}
+
+
+h7 {
+border-top: 1px solid #000;
+width : 200px;
+position: absolute;
+top: 370px;
+left: 140px;
+transform: rotate(90deg);
+}
+
+
+h6 {
+  font-size: 23pt;
+  position:absolute;
+  left : 330px;
+  top: 169px;
+
+}
+
+h8 {
+font-size: 12pt;
+position: absolute;
+text-align: center;
+
+top: 450px;
+
+
 }
 
 .gauche img{
-  width:140mm;
+  width:90mm;
+
 }

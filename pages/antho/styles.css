@@ -1,0 +1,66 @@
+/* Styles css ( mise en forme ) de ma double page */
+
+/*
+Fonts dispo :
+
+OpenSans
+
+DejaVuSansMono
+DejaVuSans
+DejaVuSerif
+DejaVuSerif-condensed
+
+*/
+
+.page{
+  /*font-family: 'Fredoka One', cursive;*/
+  font-family: 'Quicksand', sans-serif;
+  font-weight:medium;
+  font-size: 14pt;
+  background-color: #FFF;
+}
+
+.droite{
+  
+}
+
+
+.gauche{
+
+}
+
+
+h1{
+  font-size:16pt;
+  font-weight: medium;
+  text-align: left;
+  color:#212121;
+}
+
+p{
+font-size:12pt;
+  font-weight: medium;
+  text-align: left;
+}
+
+.flotte{
+  float:right;
+}
+
+.gauche img{
+  width:80mm;
+  height: auto;
+  margin-left:40px;
+  float: right;
+  border-radius: 40px;
+
+}
+
+.droite img{
+  width:50mm;
+  height: auto;
+  margin-left:40px;
+  float: right;
+  border-radius: 40px;
+
+}
