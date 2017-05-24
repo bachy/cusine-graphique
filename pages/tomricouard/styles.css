@@ -15,7 +15,7 @@ DejaVuSerif-condensed
 .page{
   font-family: "Arial";
   font-weight:normal;
-  font-size: 14pt;
+
 }
 
 .droite{
@@ -67,12 +67,29 @@ text-align: center;
 .flotte5 img{
 
   position: absolute;
-  top: 225px;
+  top: 232px;
   left: 440px;
   width: 40mm;
   height: auto;
 }
 
+.flotte6 img{
+
+  position: absolute;
+  top: 360px;
+  left: 25px;
+  width: 105mm;
+  height: auto;
+}
+
+.flotte7 img{
+
+  position: absolute;
+  top: 680px;
+  right: 25px;
+  width: 115mm;
+  height: 75mm;
+}
 p{
 
 
@@ -97,18 +114,18 @@ left: 310px;
 }
 
 h4 {
-font-size: 15pt;
+font-size: 16pt;
 position: absolute;
 left: 65px;
-top: 190px;
+top: 185px;
 text-decoration: underline;
 }
 
 h5 {
-font-size: 15pt;
+font-size: 16pt;
 position: absolute;
-left: 175px;
-top: 183px;
+left: 183px;
+top: 179px;
 
 }
 
@@ -135,7 +152,7 @@ h6 {
   font-size: 21pt;
   position:absolute;
   left : 330px;
-  top: 143px;
+  top: 145px;
 
 }
 
@@ -187,6 +204,48 @@ h13 {
 font-size: 12pt;
 position: absolute;
 text-align: left;
-left: 15px;
+left: 23px;
 top: 90px;
+}
+
+h14 {
+
+    font-size: 21pt;
+    position:absolute;
+    font-weight: bold;
+    left: 370px;
+    top: 310px;
+}
+
+h15 {
+font-size: 12pt;
+position: absolute;
+text-align: center;
+right: 20px;
+top: 385px;
+}
+
+h16 {
+font-size: 12pt;
+position: absolute;
+text-align: center;
+left: 35px;
+top: 580px;
+}
+
+h17 {
+
+    font-size: 21pt;
+    position:absolute;
+    font-weight: bold;
+    left: 47px;
+    top: 665px;
+}
+
+h18 {
+font-size: 12pt;
+position: absolute;
+text-align: left;
+left: 27px;
+top: 710px;
 }
