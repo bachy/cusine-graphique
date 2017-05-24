@@ -27,11 +27,50 @@ text-align: center;
 }
 
 
-.flotte {
+.flotte1 img{
   position: absolute;
-  top: 282px;
-  left: 305px;
+  top: 263px;
+  left: 315px;
+  width: 320px;
+  height: 140px;
 
+}
+
+
+.flotte2 img{
+
+  position: absolute;
+  top: 550px;
+  left: 40px;
+  width: 90mm;
+  height: auto;
+}
+
+.flotte3 img{
+
+  position: absolute;
+  top: 710px;
+  left: 55px;
+  width: 100mm;
+  height: auto;
+}
+
+.flotte4 img{
+
+  position: absolute;
+  top: 28px;
+  left: 280px;
+  width: 100mm;
+  height: 50mm;
+}
+
+.flotte5 img{
+
+  position: absolute;
+  top: 225px;
+  left: 440px;
+  width: 40mm;
+  height: auto;
 }
 
 p{
@@ -50,7 +89,7 @@ font-weight: lighter;
 }
 
 h3{
-border-top: 1px solid #000;
+border-top: 4px solid #000;
 width : 100px;
 position: absolute;
 top: 125px;
@@ -61,7 +100,7 @@ h4 {
 font-size: 15pt;
 position: absolute;
 left: 65px;
-top: 220px;
+top: 190px;
 text-decoration: underline;
 }
 
@@ -69,34 +108,34 @@ h5 {
 font-size: 15pt;
 position: absolute;
 left: 175px;
-top: 213px;
+top: 183px;
 
 }
 
 ul {
-  font-size:12pt;
+  font-size:14pt;
   position:absolute;
   left: 40px;
-  top: 278px;
+  top: 248px;
   text-align: left;
 }
 
 
 h7 {
-border-top: 1px solid #000;
+border-top: 4px solid #000;
 width : 200px;
 position: absolute;
-top: 370px;
+top: 340px;
 left: 140px;
 transform: rotate(90deg);
 }
 
 
 h6 {
-  font-size: 23pt;
+  font-size: 21pt;
   position:absolute;
   left : 330px;
-  top: 169px;
+  top: 143px;
 
 }
 
@@ -104,13 +143,50 @@ h8 {
 font-size: 12pt;
 position: absolute;
 text-align: center;
-
-top: 450px;
-
-
+right: 90px;
+top: 420px;
 }
 
-.gauche img{
-  width:90mm;
 
+h9 {
+font-size: 12pt;
+position: absolute;
+text-align: center;
+left: 380px;
+top: 595px;
+}
+
+h10 {
+
+    font-size: 21pt;
+    position:absolute;
+    font-weight: bold;
+    left : 65px;
+    top: 497px;
+}
+
+h11 {
+
+    font-size: 21pt;
+    position:absolute;
+    font-weight: bold;
+    left : 45px;
+    top: 30px;
+}
+
+
+h12 {
+font-size: 12pt;
+position: absolute;
+text-align: right;
+right: 15px;
+bottom: 90px;
+}
+
+h13 {
+font-size: 12pt;
+position: absolute;
+text-align: left;
+left: 15px;
+top: 90px;
 }
