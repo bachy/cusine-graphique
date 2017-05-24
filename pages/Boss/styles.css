@@ -13,9 +13,11 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSans";
+  font-family: "Avenir";
   font-weight:normal;
-  font-size: 14pt;
+  font-size: 12pt;
+  background-color:#a41737
+
 }
 
 .droite{
@@ -24,14 +26,78 @@ DejaVuSerif-condensed
 
 .gauche{
 
+
 }
+
+
+.list {
+ color : #fff;
+ font-size : 18pt;
+font-family: "Avenir Next LT Pro";
+margin-left: 40px;
+margin-bottom: 100px;
+
+}
+
+.trait {
+height: 5px;
+width: 250px;
+background-color: #fff;
+margin:0 auto 60px auto; /*faire tj des margins vers le bas */
+display: block; /* c'est pour savoir que c'est un block, utile pour les margin       */
+
+}
+
 
 
 h1{
-  font-size:42pt;
-  font-weight: lighter;
+  font-family: "Arial";
+  font-size:30pt;
+  font-weight: bold;
+  color : #ffffff;
+  text-align : left;
+  width:50mm;
+  top:0;
+
+}
+
+h2 {
+
+
+}
+
+
+.texte{
+  color: #fff;
+  font-family: "Avenir Next LT Pro";
+  font-size: : 12pt;
+  text-align: justify;
+  margin-left: 330px;
+  margin-right: 30px;
+  margin-bottom: 60px;
+
+
 }
 
 .gauche img{
-  width:140mm;
+position: absolute;
+right: 50px;
+top: 50px;
+}
+
+.image2{
+position: absolute;
+left: 20px;
+margin-top: 500px;
+
+}
+
+
+.trait2{
+  height: 5px;
+  width: 250px;
+  background-color: #fff;
+  margin:0 auto 60px auto; /*faire tj des margins vers le bas */
+  display: block; /* c'est pour savoir que c'est un block, utile pour les margin       */
+
 }
