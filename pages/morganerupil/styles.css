@@ -16,6 +16,7 @@ DejaVuSerif-condensed
   font-family: "DejaVuSans";
   font-weight:normal;
   font-size: 14pt;
+
 }
 
 .droite{
@@ -26,12 +27,34 @@ DejaVuSerif-condensed
 
 }
 
+.ibniz{
+  margin-left:70px;
+
+
+}
+.lalala{
+margin-left : 160px;
+
+
+
+
+}
+
 
 h1{
-  font-size:42pt;
+  font-size:25pt;
   font-weight: lighter;
+  color:#d9b75c
 }
 
 .gauche img{
-  width:140mm;
+  width:50mm;
+}
+.lalala2{
+height:200mm;
+width: auto;
+margin-left : 200px;
+
+
+}
 }
