@@ -13,9 +13,11 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSans";
+  font-family: "DejaVuSansMono";
   font-weight:normal;
   font-size: 14pt;
+  color : #C392C1
+
 }
 
 .droite{
@@ -24,14 +26,36 @@ DejaVuSerif-condensed
 
 .gauche{
 
+
 }
 
 
 h1{
   font-size:42pt;
   font-weight: lighter;
+  text-align: inherit;
+  color: #67C1BD
+}
+
+h2{
+  font-size: 24pt;
+  font-weight: lighter;
+  text-align: left;
+  color: #67C1BD
 }
 
 .gauche img{
-  width:140mm;
+  width:50mm;
+  height:auto;
+  float:right;
+margin-left:50px;
+  }
+
+.flotte{
+  float:right;
+  margin-right:75px;
+}
+
+p{
+text-align: left;
 }
