@@ -101,3 +101,28 @@ margin-top: 500px;
   display: block; /* c'est pour savoir que c'est un block, utile pour les margin       */
 
 }
+
+.texte2{
+font-size: 12pt;
+color: #fff;
+font-family:"Avenir Next LT Pro";
+text-align: justify;
+margin-left: 30px;
+margin-right: 350px;
+margin-bottom: 20px;
+}
+
+
+.image3{
+position: absolute;
+left: 350px;
+top: 90px;
+}
+
+.trait3{
+  height: 5px;
+  width: 250px;
+  background-color: #fff;
+  margin:0 auto 60px auto; /*faire tj des margins vers le bas */
+  display: block; /* c'est pour savoir que c'est un block, utile pour les margin */
+  }
