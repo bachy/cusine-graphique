@@ -101,3 +101,65 @@ margin-top: 500px;
   display: block; /* c'est pour savoir que c'est un block, utile pour les margin       */
 
 }
+
+.texte2{
+font-size: 12pt;
+color: #fff;
+font-family:"Avenir Next LT Pro";
+text-align: justify;
+margin-left: 30px;
+margin-right: 350px;
+margin-bottom: 20px;
+}
+
+
+.image3{
+position: absolute;
+left: 350px;
+top: 90px;
+}
+
+.trait3{
+  height: 5px;
+  width: 250px;
+  background-color: #fff;
+  margin:0 auto 60px auto; /*faire tj des margins vers le bas */
+  display: block; /* c'est pour savoir que c'est un block, utile pour les margin */
+  }
+
+.texte3{
+  font-size: 12pt;
+  color: #fff;
+  font-family:"Avenir Next LT Pro";
+  text-align: justify;
+  margin-left: 360px;
+  margin-right: 105px;
+  margin-top: 85px;
+  margin-bottom: 90px;
+}
+
+.image4{
+  position: absolute;
+  left: 60px;
+  top: 480px;
+
+}
+
+.trait4{
+  height: 5px;
+  width: 250px;
+  background-color: #fff;
+  margin:0 auto 60px auto;
+  display: block;
+}
+
+.texte4{
+  font-size: 12pt;
+  color: #fff;
+  font-family:"Avenir Next LT Pro";
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 100px;
+
+}
