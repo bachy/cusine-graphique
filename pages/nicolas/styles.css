@@ -15,21 +15,62 @@ DejaVuSerif-condensed
 .page{
   font-family: "DejaVuSans";
   font-weight:normal;
-  font-size: 14pt;
+  font-size: 15pt;
 }
 
 .droite{
 }
-
-
-.gauche{
-
+#image-fini{
+  position: absolute;
+  top:0cm;
+  left: 2cm;
+  width: 6cm;
+  height:30cm;
+  background-image: url(images/image-fini.png);
+  background-size: ;
+  background-position: center ;
 }
 
+#image-processing{
+  position: absolute;
+  top:0cm;
+  left: 0cm;
+  width: 6cm;
+  height: 30cm;
+  background-image: url(images/image1.png);
+  background-size: ;
+  background-position: center ;
+}
+  #image-notebox{
+    position: absolute;
+    top:0cm;
+    left: 6cm;
+    width: 7cm;
+    height: 30cm;
+    background-image: url(images/image2.png);
+    background-size: ;
+    background-position: center ;
+}
+  #image-trfique{
+    position: absolute;
+    top:0cm;
+    left: 13cm;
+    width: 6cm;
+    height: 30cm;
+    background-image: url(images/image3.png);
 
+}
+#montitre{
+  position: absolute;
+  top:1.5cm;
+  left: 9cm;
+  width: 350px;
+    border: 0px solid black;
+    text-align: justify;
+}
 h1{
-  font-size:42pt;
-  font-weight: lighter;
+  font-size:23pt;
+
 }
 
 .gauche img{

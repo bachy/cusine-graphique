@@ -45,11 +45,18 @@ h2{
 }
 
 .gauche img{
-  width:50mm;
+  width:60mm;
   height:auto;
   float:right;
-margin-left:50px;
+margin-left:30px;
   }
+
+  .droite img{
+    width:93mm;
+    height:auto;
+    float:right;
+  margin-left:0px;
+    }
 
 .flotte{
   float:right;
