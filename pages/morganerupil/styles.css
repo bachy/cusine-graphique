@@ -20,6 +20,7 @@ DejaVuSerif-condensed
 }
 
 .droite{
+
 }
 
 
@@ -33,17 +34,13 @@ DejaVuSerif-condensed
 
 }
 .lalala{
-margin-left : 160px;
+margin-left : 80px;
 }
-.ouf{
-  height: 300mm;
-  width:auto;
-  margin-left: 200px;
+
+
+.ouf {
+  margin-left: 100px;
   }
-
-
-}
-
 
 h1{
   font-size:25pt;
@@ -54,9 +51,15 @@ h1{
 .gauche img{
   width:50mm;
 }
+.yolo img{
+margin-left: 220px;
 
 }
+.map img{
+  margin-left: 50px;
+  }
 
 .droite img{
-  width:60mm
+width:74.9mm;
+
 }
