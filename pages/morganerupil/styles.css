@@ -13,7 +13,7 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSans";
+  font-family: "Arial";
   font-weight:normal;
   font-size: 14pt;
 
@@ -34,8 +34,12 @@ DejaVuSerif-condensed
 }
 .lalala{
 margin-left : 160px;
-
-
+}
+.ouf{
+  height: 300mm;
+  width:auto;
+  margin-left: 200px;
+  }
 
 
 }
@@ -50,11 +54,9 @@ h1{
 .gauche img{
   width:50mm;
 }
-.lalala2{
-height:200mm;
-width: auto;
-margin-left : 200px;
-
 
 }
+
+.droite img{
+  width:60mm
 }
