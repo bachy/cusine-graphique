@@ -33,15 +33,27 @@ h1{
 }
 
 .gauche img{
-  width:140mm;
-}
-
-.gauche img{
 
 	height:50mm;
 	width:auto;
+	margin-right:50px;
 }
 
-.flotte{
-	margin-left: 100px;
+p{
+
+font-size:12px;
+display: block;
+}
+
+
+.flotte1{
+	float:left;
+	margin-right:50px;
+	margin-left:50px;
+}
+
+.flotte2{
+	float:right;
+	margin-left:50px;
+	margin-right:50px;
 }
