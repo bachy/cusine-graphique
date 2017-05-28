@@ -13,7 +13,7 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSansMono";
+  font-family: "DejaVuSansMono", sans-serif;
   font-weight:normal;
   font-size: 12pt;
 }
@@ -33,6 +33,13 @@ h1{
 }
 
 .gauche img{
+
+	height:50mm;
+	width:auto;
+	margin-right:50px;
+}
+
+.droite img{
 
 	height:50mm;
 	width:auto;
