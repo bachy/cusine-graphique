@@ -13,7 +13,7 @@ DejaVuSerif-condensed
 */
 
 .page{
-  font-family: "DejaVuSansMono", sans-serif;
+  font-family: 'DejaVuSansMono', sans-serif;
   font-weight:normal;
   font-size: 12pt;
 }
@@ -36,19 +36,18 @@ h1{
 
 	height:50mm;
 	width:auto;
-	margin-right:50px;
+	margin-right:20px;
 }
 
 .droite img{
 
-	height:50mm;
+	height:130mm;
 	width:auto;
-	margin-right:50px;
 }
 
 p{
 
-font-size:12px;
+font-size:11px;
 display: block;
 }
 
@@ -63,4 +62,14 @@ display: block;
 	float:right;
 	margin-left:50px;
 	margin-right:50px;
+}
+.flotte3{
+	float:left;
+	margin-right:50px;
+	margin-left:50px;
+}
+
+.droite p{
+	margin:0px 200px 0px 200px;
+	text-align: left;
 }
