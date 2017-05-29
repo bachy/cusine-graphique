@@ -1,0 +1,78 @@
+/* Styles css ( mise en forme ) de ma double page */
+
+/*
+Fonts dispo :
+
+OpenSans
+
+DejaVuSansMono
+DejaVuSans
+DejaVuSerif
+DejaVuSerif-condensed
+
+*/
+
+.page{
+  font-family: 'Raleway', sans-serif;
+  font-weight:normal;
+  font-size: 10pt;
+  color: #292929;
+}
+
+.droite{
+}
+
+
+.gauche{
+
+}
+
+.image{
+  height: 70px;
+  width: 45px;
+}
+
+a{
+  text-decoration: none;
+  color: #800000;
+}
+
+img {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: 0px;
+}
+
+h1{
+  font-family: 'Josefin Slab', sans-serif;
+  text-align: center;
+  font-size:30pt;
+  font-weight: lighter;
+  color: #385459;
+  margin-bottom: 0px;
+}
+
+h2{
+  font-family: 'Josefin Slab', sans-serif;
+  text-align: center;
+  font-size:25pt;
+  font-weight: lighter;
+  color: #385459;
+}
+
+ul{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gauche img{
+  width:140mm;
+}
+
+hr{
+    border: 0;
+    border-top: 8px solid #385459;
+    margin: 1em 0;
+    padding: 0;
+    width: 400px;
+}
