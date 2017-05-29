@@ -1,23 +1,39 @@
+/* Styles css ( mise en forme ) de ma double page */
+
+/*
+Fonts dispo :
+
+OpenSans
+
+DejaVuSansMono
+DejaVuSans
+DejaVuSerif
+DejaVuSerif-condensed
+
+*/
+
 .page{
-  font-family: "DejaVuSans";
+  font-family: "Arial";
   font-weight:normal;
-  font-size: 14pt;
-}
-
-.droite{
-}
-
-
-.gauche{
-
-}
-
-
-h1{
-  font-size:42pt;
-  font-weight: lighter;
+  font-size: 15pt;
+  background-color:silver
 }
 
 .gauche img{
-  width:140mm;
+  width:135mm;
+}
+.droite img{
+  width:300mm;
+}
+
+h1{
+  font-size:40pt;
+  font-weight: bold;
+
+}
+p{
+  color : #ffffff;
+
+
+font-weight: lighter;
 }
