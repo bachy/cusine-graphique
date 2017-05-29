@@ -188,6 +188,11 @@ $paper-height: $page-height + ( $edge * 2 );
         -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
     }
+    .paper {
+        /* centrer la page à l'écran */
+        /* UI */
+        background-color: white;
+    }
 }
 
 /**
