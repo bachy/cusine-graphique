@@ -32,7 +32,7 @@ font-size: 14pt;
 .imageGauche{
   margin-left: auto;
   margin-right: auto;
-  Background-position : center center; }
+  background-position : center center; }
 .footer{
     border-top-style :dashed;
     margin-left: 50px;
@@ -58,7 +58,7 @@ h1{margin-top:  auto;
   font-size:42pt;
   font-weight:300;
 }
-h2 {fontsize:22pt;
+h2 {font-size:22pt;
     font-weight: lighter;
     color : #1D61A0; }
 .gauche img{

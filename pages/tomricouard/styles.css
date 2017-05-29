@@ -138,7 +138,7 @@ ul {
 }
 
 
-h7 {
+.h7 {
 border-top: 4px solid #000;
 width : 200px;
 position: absolute;
@@ -156,7 +156,7 @@ h6 {
 
 }
 
-h8 {
+.h8 {
 font-size: 12pt;
 position: absolute;
 text-align: center;
@@ -165,7 +165,7 @@ top: 420px;
 }
 
 
-h9 {
+.h9 {
 font-size: 12pt;
 position: absolute;
 text-align: center;
@@ -173,7 +173,7 @@ left: 380px;
 top: 595px;
 }
 
-h10 {
+.h10 {
 
     font-size: 21pt;
     position:absolute;
@@ -182,7 +182,7 @@ h10 {
     top: 497px;
 }
 
-h11 {
+.h11 {
 
     font-size: 21pt;
     position:absolute;
@@ -192,7 +192,7 @@ h11 {
 }
 
 
-h12 {
+.h12 {
 font-size: 12pt;
 position: absolute;
 text-align: right;
@@ -200,7 +200,7 @@ right: 15px;
 bottom: 90px;
 }
 
-h13 {
+.h13 {
 font-size: 12pt;
 position: absolute;
 text-align: left;
@@ -208,7 +208,7 @@ left: 23px;
 top: 90px;
 }
 
-h14 {
+.h14 {
 
     font-size: 21pt;
     position:absolute;
@@ -217,7 +217,7 @@ h14 {
     top: 310px;
 }
 
-h15 {
+.h15 {
 font-size: 12pt;
 position: absolute;
 text-align: center;
@@ -225,7 +225,7 @@ right: 20px;
 top: 385px;
 }
 
-h16 {
+.h16 {
 font-size: 12pt;
 position: absolute;
 text-align: center;
@@ -233,7 +233,7 @@ left: 35px;
 top: 580px;
 }
 
-h17 {
+.h17 {
 
     font-size: 21pt;
     position:absolute;
@@ -242,7 +242,7 @@ h17 {
     top: 665px;
 }
 
-h18 {
+.h18 {
 font-size: 12pt;
 position: absolute;
 text-align: left;

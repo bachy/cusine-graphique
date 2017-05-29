@@ -27,7 +27,6 @@ DejaVuSerif-condensed
   width: 6cm;
   height:30cm;
   background-image: url(images/image-fini.png);
-  background-size: ;
   background-position: center ;
 }
 
@@ -38,7 +37,6 @@ DejaVuSerif-condensed
   width: 6cm;
   height: 30cm;
   background-image: url(images/image1.png);
-  background-size: ;
   background-position: center ;
 }
   #image-notebox{
@@ -48,7 +46,6 @@ DejaVuSerif-condensed
     width: 7cm;
     height: 30cm;
     background-image: url(images/image2.png);
-    background-size: ;
     background-position: center ;
 }
   #image-trfique{

@@ -64,13 +64,13 @@ p{
   font-weight: lighter;
   color: #FFFFFF;
 }
-p1 {
+.p1 {
   text-align: left;
   font-weight: lighter;
   font-size: 12pt;
   color: #FFFFFF;
 }
-p2{
+.p2{
   text-align: left;
   font-weight: lighter;
   font-size: 12pt;

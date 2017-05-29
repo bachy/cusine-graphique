@@ -102,7 +102,7 @@
  * them include extra pages or shifts.
  */
 @page {
-  size: 640.6196pt 889.2298pt;
+  size: 595.266pt 843.8762pt;
   margin: 0; }
 
 /**
@@ -115,8 +115,8 @@
     -webkit-font-feature-settings: "liga", "dlig", "clig", "kern";
     text-rendering: optimizeLegibility; }
   .paper {
-    width: 640.6196pt;
-    height: 887.2298pt;
+    width: 595.266pt;
+    height: 841.8762pt;
     box-sizing: border-box;
     /* defines a named counter and increments it every page, so we can use
          * it to compute the page number */
@@ -129,12 +129,12 @@
          * the format */
     overflow: hidden;
     /* Crop marks */
-    padding: 22.6768pt;
+    padding: 0pt;
     position: relative;
     /* Crop marks */
     background-image: -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%), -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%), -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%), -webkit-linear-gradient(90deg, black 0, black 100%), -webkit-linear-gradient(0deg, black 0, black 100%);
-    background-size: 14.173pt 1px, 1px 14.173pt, 14.173pt 1px, 1px 14.173pt, 14.173pt 1px, 1px 14.173pt, 14.173pt 1px, 1px 14.173pt;
-    background-position: left 22.6768pt, 22.6768pt top, right 22.6768pt, 617.9428pt top, right 864.553pt, 617.9428pt bottom, left 864.553pt, 22.6768pt bottom;
+    background-size: 0pt 1px, 1px 0pt, 0pt 1px, 1px 0pt, 0pt 1px, 1px 0pt, 0pt 1px, 1px 0pt;
+    background-position: left 0pt, 0pt top, right 0pt, 595.266pt top, right 841.8762pt, 595.266pt bottom, left 841.8762pt, 0pt bottom;
     background-repeat: no-repeat; }
   .page {
     /* defines the page size */
@@ -148,17 +148,17 @@
   .spread .paper {
     float: left; }
   .spread:not(.facing) .paper:nth-child(odd) {
-    margin-left: -22.6768pt; }
+    margin-left: 0pt; }
   .spread:not(.facing) .paper:nth-child(even) {
-    margin-right: -22.6768pt; }
+    margin-right: 0pt; }
   .spread:not(.facing) .paper:first-child {
     margin-left: 595.266pt; }
   .spread.facing .paper:nth-child(even) {
     margin-right: initial;
-    margin-left: -22.6768pt; }
+    margin-left: 0pt; }
   .spread.facing .paper:nth-child(odd) {
     margin-left: initial;
-    margin-right: -22.6768pt; }
+    margin-right: 0pt; }
   .spread.facing .paper:first-child {
     margin-left: 0; } }
 
@@ -168,14 +168,14 @@
   body {
     background-color: #F0F0F0; }
   #pages {
-    width: 640.6196pt;
-    height: 887.2298pt;
+    width: 595.266pt;
+    height: 841.8762pt;
     margin-left: auto;
     margin-right: auto; }
   /* FIXME: allows for printing spreads as well */
   .spread #pages {
-    width: 1281.2392pt;
-    height: 1774.4596pt; }
+    width: 1190.532pt;
+    height: 1683.7524pt; }
   .paper {
     /* centrer la page à l'écran */
     /* UI */
@@ -198,7 +198,7 @@
 
 @media print {
   html {
-    width: 640.6196pt; }
+    width: 595.266pt; }
   body {
     /* Allows for background colors printing */
     background-color: transparent;

@@ -29,7 +29,8 @@ DejaVuSerif-condensed
 
 .gauche{
 
-}ingredient{
+}
+.ingredient{
 color : orange;
 font-weight: bold;
 font-style: italic;
@@ -37,14 +38,13 @@ text-align: center;
 text-decoration: underline;
    }
 
- ingredients{
+.ingredients{
 
    font-weight: lighter;
    text-align: center;
+}
 
- }
- {}
-mains{
+.mains{
   color: yellow;
 }
 
@@ -62,8 +62,10 @@ h1{
 h3{
   color: orange;
 text-align: center;
-  }
-  h{ text-decoration: underline;}
+}
+
+span.underline{ text-decoration: underline;}
+
 .gauche img{
   width:140mm;
 }

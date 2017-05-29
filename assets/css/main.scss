@@ -45,10 +45,10 @@ $page-width: mm2pt(210);
 $page-height: mm2pt(297);
 
 /* the size of the crop marks based on scribus defaults */
-$crop-size: mm2pt(5);
+$crop-size: mm2pt(0);
 
 /* the size of bleed */
-$bleed: mm2pt(3);
+$bleed: mm2pt(0);
 
 /* loads the core file */
 // @import "html2print.scss";
