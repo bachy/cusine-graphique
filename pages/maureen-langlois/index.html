@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="normal spread facing debug">
+  <head>
+    <meta charset="utf-8">
+    <title>Ma Double Page</title>
+
+    <link rel="stylesheet" href="../../assets/fonts/opensans/opensans.css">
+    <link rel="stylesheet" href="../../assets/fonts/dejavu/dejavu.css">
+    <link rel="stylesheet" href="../../assets/css/dist/main.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Josefin+Slab" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- PAGES -->
+    <div id="pages">
+
+      <div class="paper">
+        <div class="page gauche">
+          <div class="body">
+            <!-- <div class="bloc x1 y1 w8 b0" style="margin-bottom:0pt;"> -->
+              <!-- ici je rentre les contenus de ma page de gauche -->
+              <center><hr></hr></center>
+              <h1>Hybridation</h1>
+              <center><hr></hr></center>
+              <br><p>
+                <center>Cliquez sur les images pour les agrandir</center>
+              </p>
+              <center><img src="images/result.png" alt="résultat"/></center>
+              <p style="margin-left:150px;">Il vous faut :<br>
+                <ul style="margin-left:150px;">
+                  <li>Blender (<a href="https://www.blender.org/download/">Télécharger</a>)</li>
+                  <li>Inkscape (<a href="https://inkscape.org/fr/telecharger/">Télécharger</a>)</li>
+                  <li>Makehumans (<a href="http://www.makehuman.org/download.php">Télécharger</a>)</li>
+                  <li>Des images (ex : gravure naturaliste, vos propres dessins)</li>
+                </ul>
+                </p>
+                <center><hr></hr></center>
+                <h2>1 - Ouvrir Makehumans</h2>
+                <center><a href="https://github.com/bachy/cusine-graphique/tree/master/pages/maureen-langlois/images/makehumans.png"><img src="images/makehumans.png" width=auto height="100px"/></a></center>
+                <ul>
+                  <li>Créez votre humain, modifiez ses caractéristiques dans l'onglet "modelling" en déplaçant les curseurs dans les sous-onglets ("main", "gender"...)</li>
+                  <li>Une fois terminé, exportez votre humain en Collada (dae)</li>
+                </ul>
+
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="page droite">
+          <div class="body">
+            <!-- <div class="bloc x1 y1 w8 b0" style="margin-bottom:0pt;"> -->
+              <!-- ici je rentre les contenus de ma page de droite -->
+
+            <!-- </div> -->
+
+            <h2>1 - Ouvrir Inkscape</h2>
+            <center><a href="https://github.com/bachy/cusine-graphique/tree/master/pages/maureen-langlois/images/inkscape.png"><img src="images/inkscape.png" width=auto height="100px"/></a></center>
+            <ul>
+              <li>Ouvrez votre image dans Inkscape (dessin scanné, gravure ...) puis vectorisez là : chemin > vectoriser un objet matriciel. Une fenêtre s'ouvre, réglez les paramètres à votre convenance puis validez.</li>
+              <li>Un vecteur se crée au dessus de votre image, supprimez cette dernière puis sélectionnez le vecteur. Dans la fenêtre "fond et contour", supprimer le remplissage (fond) et mettez le contour en aplat. Avec l'outil gomme, retirez les éléments indésirables. Sauvegardez en .svg. Vous pouvez en créer plusieurs à partir d'autres images.</li>
+            </ul>
+
+            <center><hr></hr></center>
+
+            <h2>1 - Ouvrir Blender</h2>
+            <center><a href="https://github.com/bachy/cusine-graphique/tree/master/pages/maureen-langlois/images/blenderimport.png"><img src="images/blenderimport.png" width=auto height="100px"/></a></center>
+            <ul>
+              <li>Importez votre humain : File > Import > Collada (Default) .dae, sélectionnez votre fichier puis validez (de même pour importer les vecteurs sauf qu'il faudra choisir Scalable Vector Graphics .svg)</li>
+            </ul>
+
+            <center><a href="https://github.com/bachy/cusine-graphique/tree/master/pages/maureen-langlois/images/window1.png"><img src="images/window1.png" width=auto height="10px"/></a></center>
+            <ul>
+              <li>Choisissez ensuite la partie humaine que vous souhaitez hybrider. Vérifiez que vous êtes en "edit mode" et que le bouton "limit selection to visible" est activé. Sélectionnez ce que vous voulez supprimer avec votre souris en maintenant la touche ctrl enfoncée.</li>
+              <li>La partie sélectionnée devient orange, cliquez sur la touche clavier "suppr." une fenêtre "delete" s'ouvre, puis cliquez sur "vertices"</li>
+            </ul>
+
+            <center><a href="https://github.com/bachy/cusine-graphique/tree/master/pages/maureen-langlois/images/3D.png"><img src="images/3D.png" width=auto height="100px"/></a></center>
+            <ul>
+              <li>Importez vos vecteurs puis placez les comme vous le souhaitez par rapport à la partie humaine, utilisez les touches clavier R ou S pour les faire tourner ou redimensionner.</li>
+              <li>Choisissez l'"object mode", dans la fenêtre de droite, onglet "data" (la courbe) shape > 3D puis geometry > extrude > entrez un chiffre, puis un autre jusqu'à ce que l'épaisseur vous semble correcte.</li>
+              <li>Ensuite revenez dans shape et sélectionnez 2D pour fermer votre forme.</li>
+            </ul>
+            <center><hr></hr></center>
+            <center><p style="margin-left:20px;margin-right:20px;">Vous pouvez ensuite retravailler ces hybrides en "sculpt mode", les animer ...</p></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
